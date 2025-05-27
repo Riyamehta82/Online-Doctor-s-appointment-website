@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu li:hover {
+            background: #34495e;
+        }
+
+        /* Submenu */
+        .submenu {
+            list-style: none;
+            padding-left: 20px;
+            display: none;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        .submenu li {
+            padding: 8px;
+        }
+
+        .submenu li a {
+            color: #bdc3c7;
+            text-decoration: none;
+        }
+
+        .submenu li:hover {
+            background: #415b76;
+        }
+
+        /* Main Content - Iframe */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            background: #ecf0f1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul class="menu">
+            <li><a href="home.html" target="content">Dashboard</a></li>
+            <li>
+                <a href="#">View Users</a>
+                <ul class="submenu">
+                    <li><a href="dash1.jsp" target="content">View Doctor</a></li>
+                    <li><a href="dash2.jsp" target="content">View Patient</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Add Users</a>
+                <ul class="submenu">
+                    <li><a href="doctor registration.html" target="content">Add Doctor</a></li>
+                    <li><a href="register.html" target="content">Add Patient</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Settings</a>
+                <ul class="submenu">
+                    <li><a href="profile.html" target="content">Profile</a></li>
+                    <li><a href="delete1.html" target="content">Delete Patient</a></li>
+                    <li><a href="delete2.html" target="content">Delete Doctor</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Search</a>
+                <ul class="submenu">
+                    <li><a href="search1.html" target="content">Search Doctor</a></li>
+                    <li><a href="search2.html" target="content">Search Patient</a></li>
+                </ul>
+            </li>
+            <li><a href="logout.html" target="content">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <iframe name="content" src="home.html"></iframe>
+    </div>
+
+</body>
+</html>

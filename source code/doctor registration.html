@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                body {
+                    font-family: Arial, sans-serif;
+                }
+                .navbar {
+                    background-color:white;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0;
+                }
+                .navbar a {
+                    color: purple;
+                    text-decoration: none;
+                    padding: 14px 20px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+                .navbar a:hover, .navbar a.active {
+                    background-color: turquoise;
+                    border-radius: 5px;
+                }
+            </style>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const links = document.querySelectorAll(".navbar a");
+                    links.forEach(link => {
+                        link.addEventListener("click", function() {
+                            links.forEach(l => l.classList.remove("active"));
+                            this.classList.add("active");
+                        });
+                    });
+                });
+            </script>
+            <style>
+                table {
+                  border-collapse: separate;
+                  border-spacing: 0 15px; /* 10px space after each row */
+                }
+              </style>
+        <title>
+             DOCTOR'S REGISTRATION FORM
+        </title>
+    </head>
+    <BODY><form action="doctor registration.jsp" method="post">
+        <table>
+            <tr>
+                <td><img src="logo.jpg" height="150" width="250"></td>
+                <td width="1400" bgcolor="teal" style="color:beige"><h1><CENTER><font size=+7><b>LIFE SAVERS</b>
+ </font></CENTER></h1></td>
+            </tr>
+        </table><hr>
+        <div class="navbar">
+            <a href="FRONT.html" class="active">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="doctorspage.html">DOCTORS</a>
+            <a href="department.html">DEPARTMENT</a>
+            <a href="enquiry.html">ENQUIRY</a>
+            <a href="feedback.html">FEEDBACK</a>
+            <a href="help.html">HELP-DESK</a>
+        </div>
+        <hr><br>
+        <CENTER>
+            <H1> <FONT SIZE=+6>DOCTOR'S REGISTRATION FORM</FONT></H1><HR><BR><BR>
+        <table>
+             <tr><td><H4>NAME</H4></td><td><input type ="text" placeholder="Enter name" input size="30" name="nm1"></td></tr>
+            <tr><td WIDTH="100"><H4>GENDER</H4></td><td><input type="radio" name="nm2" value="male">MALE<input type="radio" name="rd" value="female" name="nm2">FEMALE</td></tr>
+            <TR><TD><h4>AGE</h4></TD><td><input type="number" placeholder="Enter your age" input size="3" name="nm3"></td></TR>
+            <tr><td><h4>EMAIL</h4></td><td><input type="text" placeholder="Enter your email" name="nm4"></td></tr>
+            <tr><td><h4>CONTACT</h4></td><td><input type="number" placeholder="Enter your phone no." input size="20" name="nm5"></td></tr>        
+            <tr><td><h4>ADDRESS</h4></td><td><input type="text" placeholder="Enter your address" input size="50" name="nm6"></td></tr>
+            <tr><td><h4>QUALIFICATION</h4></td><td><input type="text" placeholder="Enter your highest qualificaton" input size=30 name=nm7</td></tr>
+            <tr><td><h4>NAME OF THE INSTITUTE</h4></td><TD><INPUT TYPE=TEXT placeholder="Name the institute" input size="30" name="nm8"></TD></tr>
+                <tr><td><h4>SPECIALISATION</h4></td><td><input type="text" placeholder="Any feild SPECIALISATION"name=nm9></td></tr>
+                <tr><td><h4>WORKING EXPERIENCE</h4></td><td><input type="number" placeholder="if any" name="nm10"></td></tr>
+            <tr><td><h4>STATE</h4></td><td><select  name="nm11">
+                <option>select</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>	
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chhattisgarh</option>
+            <option> Goa</option>
+           	<option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jharkhand</option>	
+            <option>Karnataka</option>
+            <option>Kerala</option>	
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra	</option>
+            <option> Manipur</option>
+            <option> Meghalaya</option>
+            <option>Mizoram</option>
+            <option> Nagaland</option>
+            <option>Odisha</option>
+            <option>Punjab</option>
+            <option> Rajasthan</option>
+            <option> Sikkim	</option>
+            <option>Tamil Nadu</option>
+            <option> Telangana</option>
+            <option> Tripura</option>
+            <option> Uttar Pradesh</option>
+            <option> Uttarakhand</option>
+            <option> West Bengal</option>
+            </td></tr>  
+            <tr><td><h4>PASSWORD</h4></td><TD><input type="text" placeholder="Enter a password" input size="15" name="nm12"></TD></tr>  
+            <tr><td><h4>CONFIRM PASSWORD</h4></td><td><input type="text" placeholder="Re-enter your password" name="nm13"></td></tr>
+            <tr><td><center><input type=submit onclick="SUBMIT"  value="submit"></center></td></tr>
+        </table>
+ </CENTER>
+</form>
+</BODY>
+</html>
